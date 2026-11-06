@@ -63,7 +63,6 @@ en-is,Mistral-Large,LLM,dec,paragraph
 en-is,ONLINE-A,Online,,
 en-is,ONLINE-B,Online,,
 en-is,ONLINE-G,Online,,
-en-is,ONLINE-empty,Online,,
 en-is,Phi-3-Medium,LLM,dec,paragraph
 en-is,TSU-HITs,Custom,,sentence
 en-is,TranssionMT,Custom,enc-dec,

@@ -11,7 +11,7 @@ data/
   source_profile.csv              Step 1 and 2 output for the 997 English source segments
   judgments/en-de.jsonl.gz        Step 3 output: skill scores and judge feedback, 26 systems
   judgments/en-es.jsonl.gz        23 systems
-  judgments/en-is.jsonl.gz        20 systems
+  judgments/en-is.jsonl.gz        19 systems
   system_info.csv                 System type, architecture, and context strategy
   context_config/                 En-Es context configuration study (Section 5.4)
   human_eval/                     Human validation of the judge (Section 4)
@@ -20,6 +20,7 @@ code/
   scripts/                        Commands for the three steps
 analysis/
   reproduce.py                    Recomputes the main statistics of the paper
+  results/                        Scores by system, domain, context type, and skill
 ```
 
 ### `data/source_profile.csv`
@@ -69,6 +70,8 @@ python analysis/reproduce.py
 ```
 
 The script prints the overall score of every system, the agreement between the judge and the experts, and the segment-level correlation with ESA under each context configuration.
+
+The WMT24 placeholder system `ONLINE-empty`, which has no output for English–Icelandic, is excluded from the released judgments. The files in `analysis/results/` give the score of each system overall and by domain, context type, and skill.
 
 ## Running the judge
 
